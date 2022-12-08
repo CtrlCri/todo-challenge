@@ -28,6 +28,7 @@ A continuación se muestra los ejemplos mediante captura de pantalla de todos lo
 <p align="center"><img src="images/print03.jpg"></p>
 
 - Y así se puede crear, eliminar, actualizar(marcar tarea como completada por ejemplo con PATCH), filtrar y buscar por fecha de creación y por el el contenido. Tal como se puede observar en las capturas de pantalla a continuación:
+<p align="center"><img src="images/print03-1.jpg"></p>
 <p align="center"><img src="images/print04.jpg"></p>
 <p align="center"><img src="images/print05.jpg"></p>
 <p align="center"><img src="images/print06.jpg"></p>

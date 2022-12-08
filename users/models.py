@@ -32,4 +32,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     objects = UserManager()
     
     USERNAME_FIELD = 'email'
+    #REQUIRED_FIELDS = ['name']
     
+    def get_name(self):
+        return self.name

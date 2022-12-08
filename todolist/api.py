@@ -1,5 +1,10 @@
 from .models import Todolist
-from rest_framework import viewsets, authentication, permissions
+from rest_framework import ( 
+    viewsets, 
+    authentication, 
+    permissions,
+    filters
+)
 from .serializers import TodolistSerializer
 
 class TodolistViewSet(viewsets.ModelViewSet):
@@ -8,3 +13,6 @@ class TodolistViewSet(viewsets.ModelViewSet):
     
     authentication_classes = [authentication.TokenAuthentication]
     permission_classes = [permissions.IsAuthenticated]
+    
+    filter_backends =[filters.SearchFilter]
+    search_fields = ['description', 'created_at']

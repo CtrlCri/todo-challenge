@@ -1,37 +1,37 @@
 # Invera ToDo-List Challenge (Python/Django Jr-SSr)
+## Requisitos:
 
-El propósito de esta prueba es conocer tu capacidad para crear una pequeña aplicación funcional en un límite de tiempo. A continuación, encontrarás las funciones, los requisitos y los puntos clave que debés tener en cuenta durante el desarrollo.
+- Docker y docker-compose instalado.
+- Postman o alguna otra herramienta para testear APIs.
+- ...
 
-## Qué queremos que hagas:
+## Pasos:
 
-- El Challenge consiste en crear una aplicación web sencilla que permita a los usuarios crear y mantener una lista de tareas.
-- La entrega del resultado será en un nuevo fork de este repo y deberás hacer una pequeña demo del funcionamiento y desarrollo del proyecto ante un super comité de las más grandes mentes maestras de Invera, o a un par de devs, lo que sea más fácil de conseguir.
-- Podes contactarnos en caso que tengas alguna consulta.
+- Ejecutar "docker compose up" en la terminal de linea de comandos 
+- Se puede crear un superusuario, aunque no es necesario
+- Crear un usuario 
+- Obtener un token
+- Se puede crear tareas, listarlas , editarlas, eliminar, actualizar
+- Así como filtrar y buscar
 
-## Objetivos:
+A continuación se muestra los ejemplos mediante captura de pantalla de todos los puntos enumerados anteriormente
 
-El usuario de la aplicación tiene que ser capaz de:
+## En Postman:
 
-- Autenticarse
-- Crear una tarea
-- Eliminar una tarea
-- Marcar tareas como completadas
-- Poder ver una lista de todas las tareas existentes
-- Filtrar/buscar tareas por fecha de creación y/o por el contenido de la misma
+- Se crea un usuario enviando un JSON con name, email y password como se puede observar en la siguiente imagen:
+<p align="center"><img src="images/print01.jpg"></p>
 
-## Qué evaluamos:
+- Un token de autenticación se obtiene con un JSON con email y password:
+<p align="center"><img src="images/print02.jpg"></p>
 
-- Desarrollo utilizando Python, Django. No es necesario crear un Front-End, pero sí es necesario tener una API que permita cumplir con los objetivos de arriba.
-- Uso de librerías y paquetes estandares que reduzcan la cantidad de código propio añadido.
-- Calidad y arquitectura de código. Facilidad de lectura y mantenimiento del código. Estándares seguidos.
-- [Bonus] Manejo de logs.
-- [Bonus] Creación de tests (unitarias y de integración)
-- [Bonus] Unificar la solución propuesta en una imagen de Docker por repositorio para poder ser ejecutada en cualquier ambiente (si aplica para full stack).
+- Ingresando este token en el header ya se puede realizar una consulta a la lista de tareas; en este caso nos dará como resultado una lista vacia:
+<p align="center"><img src="images/print03.jpg"></p>
 
-## Requerimientos de entrega:
+- Y así se puede crear, eliminar, actualizar(marcar tarea como completada por ejemplo con PATCH), filtrar y buscar por fecha de creación y por el el contenido. Tal como se puede observar en las capturas de pantalla a continuación:
+<p align="center"><img src="images/print04.jpg"></p>
+<p align="center"><img src="images/print05.jpg"></p>
+<p align="center"><img src="images/print06.jpg"></p>
+<p align="center"><img src="images/print07.jpg"></p>
+<p align="center"><img src="images/print08.jpg"></p>
 
-- Hacer un fork del proyecto y pushearlo en github. Puede ser privado.
-- La solución debe correr correctamente.
-- El Readme debe contener todas las instrucciones para poder levantar la aplicación, en caso de ser necesario, y explicar cómo se usa.
-- Disponibilidad para realizar una pequeña demo del proyecto al finalizar el challenge.
-- Tiempo para la entrega: Aproximadamente 7 días.
+

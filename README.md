@@ -1,4 +1,4 @@
-# Invera ToDo-List Challenge (Python/Django Jr-SSr)
+# ToDo-List (Python / DRF)
 ## Requisitos:
 
 - Docker y docker-compose instalado.
